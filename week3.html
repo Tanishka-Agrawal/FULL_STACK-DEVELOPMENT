@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar with Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #333;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background: #444;
+    }
+
+    .content {
+      margin-left: 240px; 
+      padding: 20px;
+      flex: 1;
+      background: #f4f4f4;
+    }
+
+    .content h1 {
+      margin-left: 20px;
+    }
+
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      background: white;
+    }
+
+    .card img {
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .card button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #0056b3;
+    }
+
+    .blog-container {
+      display: flex;
+      gap: 20px;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .blog {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .blog h2 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .content {
+        margin-left: 0;
+      }
+      .card {
+        width: 90%;
+      }
+      .blog-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43u8bnk2u/43utbxp3a/Screenshot%202025-08-26%20091350.png" alt="Product">
+      <h3>Smartphone</h3>
+      <p>Latest smartphone with amazing features.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <h1>My Blog</h1>
+    <div class="blog-container">
+      <div class="blog">
+        <h2>Post 1</h2>
+        <p>This is the first blog post.</p>
+      </div>
+      <div class="blog">
+        <h2>Post 2</h2>
+        <p>This is the second blog post.</p>
+      </div>
+      <div class="blog">
+        <h2>Post 3</h2>
+        <p>This is the third blog post.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
