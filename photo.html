@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Frontend Challenge</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
+    }
+    header, footer {
+      background: #fff;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 2px solid #ccc;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: hsl(205, 80%, 35%);
+      margin-top: 0;
+    }
+    figure {
+      max-width: 220px;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
+    figure img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    thead {
+      background: hsl(205, 80%, 40%);
+      color: #fff;
+    }
+    tfoot {
+      background: #eee;
+      font-weight: bold;
+    }
+    footer {
+      border-top: 2px solid #ccc;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <figure>
+        <img src="https://uploads.onecompiler.io/43u8bnk2u/43utbxp3a/my%20photo.jpg" alt="myPhoto">
+        <figcaption>Frontend Developer Aspirant</figcaption>
+      </figure>
+      <p>Hello! I'm an aspiring front-end developer passionate about creating clean, user-friendly interfaces. I love working with HTML, CSS, and JavaScript to bring designs to life.</p>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech in Computer Science (AI & ML specialization) - GLA University</li>
+        <li>Higher Secondary - CBSE</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>React.js (Basics)</li>
+        <li>Version Control (Git)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: myemail@example.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>LinkedIn: linkedin.com/in/myprofile</p>
+    </section>
+    <section>
+      <h2>Academic Timetable</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>1:00-2:00</th>
+            <th>2:00-3:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>Physics</td>
+            <td>Coding</td>
+            <td>Break</td>
+            <td>AI Lab</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>DBMS</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Break</td>
+            <td>Web Dev</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>AI</td>
+            <td>ML</td>
+            <td>Math</td>
+            <td>Break</td>
+            <td>Sports</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Physics</td>
+            <td>DBMS</td>
+            <td>Coding</td>
+            <td>Break</td>
+            <td>ML Lab</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>English</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>Break</td>
+            <td>Workshop</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">End of Week Schedule</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> My Portfolio. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
